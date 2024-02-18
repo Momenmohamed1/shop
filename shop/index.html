@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>login</title>
+</head>
+<body>
+    <header class="head">
+        <div class="navbar">
+            <div class="logo">Momen</div>
+            <div>
+                <button id="btnlogin">login</button>
+                <button id="btnsgin">sgin in</button>
+            </div>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Server</a>
+                <a href="#">About As</a>
+                <a href="#">Rebort</a>
+            </div>
+        </div>
+    </header>
+    <div class="login" id="login">
+        <h1>login</h1>
+        <form action="">
+            <div class="inputs">
+                <div class="email1">
+                    <label for="email">email :</label>
+                <input type="email" name="" id="email_login">
+            </div>
+            <div class="password">
+                <label for="password">password :</label>
+                <input type="password" name="" id="password_login">  
+            </div>
+        </div>
+        </form>
+        <div class="icons">
+            <div class="facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="google">
+                <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="github">
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+            <div class="regrist">
+                <p>Don't have an acoount <a href="#">regrist?</a></p>
+            </div>
+            <div class="btn">
+                <button type="submit" id="btn">submit</button>
+            </div>
+    </div>
+
+    <div class="sgin_in" id="sgin">
+        <div class="page">
+            <form>
+                <h1>Sign</h1>
+                <div class="input">
+                    <label>Frist Name :</label>
+                    <input id="FristName" type="text"  placeholder="Enter Frist Name">
+                </div>
+                <div class="input">
+                    <label>Last Name :</label>
+                    <input id="LastName" type="text"  placeholder="Enter Last Name">
+                </div>
+                <div class="input , phone" >
+                    <label>Phone :</label>
+                    <input type="number" id="phone" placeholder="enter your phone" >
+                </div>
+                <div class="email , input">
+                    <label>email :</label>
+                    <input type="email" id="email_sgin" placeholder="Enter email" >
+                </div>
+                <div class="password , input">
+                    <label>password :</label>
+                    <input type="password" id="password_sgin" placeholder="Enter password" >
+                </div>
+                <div class="re-password , input">
+                    <label>re-password :</label>
+                    <input type="password" id="re_password" placeholder="Enter password" >
+                </div>
+                <div class="checkbox1">
+                    <div class="male , checkbox">
+                        <label>Male :</label>
+                        <input type="radio" id="male">
+                    </div>
+                    <div class="female , checkbox">
+                        <label>Female :</label>
+                        <input type="radio" id="female">
+                    </div>
+                    <div class="student checkbox">
+                        <label>Student :</label>
+                        <input type="radio" id="student">
+                    </div>
+                    <div class="graduted , checkbox">
+                        <label>Graduted :</label>
+                        <input type="radio" id="graduted">
+                    </div>
+                </div>
+                <select class="select">
+                    <option>Cairo</option>
+                    <option>Alexandria</option>
+                    <option>Marsa Matrouh</option>
+                    <option>Hurghada</option>
+                    <option>Fayoum</option>
+                </select>
+            </form>
+            <div class="submit">
+                <button id="btncreat">sign</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- !crud -->
+    <div class="crud" id="crud">
+        <div class="headcrud">
+            <h1>CRUD</h1>
+            <p>creat read update delete search</p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title">
+            <div class="price">
+                <input type="number" onkeyup="getTotal()" placeholder="price" id="price">
+                <input type="number" onkeyup="getTotal()" placeholder="taxes" id="taxes">
+                <input type="number" onkeyup="getTotal()" placeholder="ads" id="ads">
+                <input type="number" onkeyup="getTotal()" placeholder="discount" id="discount">
+                <div class="total">
+                    <small id="total">
+                        
+                    </small>
+                </div>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+        </div>
+        <button id="creat">creat</button>
+        <input type="text" onkeyup="searchData(this.value)" id="search" placeholder="search">
+        <div class="outputs">
+            <div class="search">
+                <button onclick="searchdata(this.id)" id="search_title">search by title</button>
+                <button onclick="searchdata(this.id)" id="search_category">search by category</button>
+            </div>
+        </div>
+        <div id="deleteAll"></div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
