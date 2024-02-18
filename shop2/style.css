@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{ 
+    display: grid;
+    grid-template-columns: 1fr auto  1fr;
+    grid-template-rows: 50px auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/img.jpg);
+}
+.login h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    margin: 15px;
+}
+.login{
+    /* height: 650px; */
+    width: 350px;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    color: white;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 2px solid white;
+}
+.login label{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+}
+.login input{
+    /* width: 66%; */
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+    height: 18px;
+    margin: 10px 0;
+    background: transparent;
+    padding: 5px;
+    color: white;
+    padding: 5px;
+}
+.email1 , .passwordlogin{
+    padding: 5px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.icons i{
+    /* color: blue; */
+    font-size: 30px;
+    margin: 5px;
+}
+i{
+    cursor: pointer;
+}
+.regrist{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.btn{
+    width: 95%;
+    margin: 10px 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.btn button{
+    width: 95%;
+    height: 40px;
+    border-radius: 15px;
+    border: 3px solid white;
+    outline: none;
+    cursor: pointer;
+    color: aqua;
+    background: transparent;
+    transition: .4s;
+}
+.btn button:hover{
+    background-color: aqua;
+    color: black;
+}
+/* 
+dfdeajkfejfjehwefwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+*/
+.sgin_in{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.page{
+width: 11cm;
+height: 15.4cm;
+border-radius: 15px;
+color: white;
+border: 3px solid rgb(255, 255, 255);
+backdrop-filter: blur(20px);
+}
+.sgin_in h1{
+text-align: center;
+font-size: 45px;
+font-weight: 700;
+margin: 5px;
+}
+.input{
+margin: 3px;
+/* font-size: 20px; */
+/* font-weight: 600/; */
+padding: 9px;
+display: flex;
+align-items: center;
+}
+.input input{
+padding: 4px;
+outline: none;
+border: none;
+border-bottom: 4px solid #fffafa;
+background: transparent;
+width: 6.5cm;
+color: white;
+}
+.phone input{
+margin-left: 1.1cm; 
+}
+.select{
+width: 115px;
+outline: none;
+padding: 2px;
+margin-left: 5px;
+}
+.submit{
+margin: 10px;
+height: 10px;
+}
+.submit button{
+width: 100%;
+text-align: center;
+background: #0178afdc;
+color: white;
+height: .8cm;
+border-radius: 14px;
+border: 2px solid black;
+font-size: 18px;
+font-weight: 549;
+transition: .4s;
+color: aqua;
+background: transparent;
+border: 3px solid white;
+}
+.submit button:hover{
+cursor: pointer;
+background-color:aqua;
+color: black;
+}
+.email input{
+width: 6.5cm;
+margin-left: 1.2cm;
+}
+.password input{
+margin-left: .3cm;
+}
+.re-password  input{
+width: 6.2cm;
+}
+.logo{
+/* margin-left:3cm ; */
+font-size: 35px;
+color: white;
+font-weight: 800;
+/* margin-left: auto; */
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+.checkbox input{
+    margin-left: 5px;
+}
+
+::placeholder{
+    color: white;
+}
+
+
+
+
+
+
+
+.head{
+    grid-row: 1/2;
+    grid-column:1/-1 ;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+.navbar a{
+    margin: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: .3s;
+}
+.navbar a:hover{
+    text-decoration: solid white 3px ;
+    color: #264e8b;
+}
+.head button{
+    background: transparent;
+    backdrop-filter: blur(25px);
+    border: 2px solid white;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    width: 80px;
+    padding: 5px;
+    color: aqua;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.head button:hover{
+    background-color: aqua;
+    color: black;
+}
+
+
+/* !crud */
+.crud{
+    width: 80%;
+    margin: auto;
+    grid-row: 2/3;
+    grid-column: 2/3; 
+    color: white;
+}
+.headcrud{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+#title{
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    padding: 3px;
+    margin: 5px;
+    outline: none;
+    color: white;
+    border: none;
+}
+.price{
+    display: flex;
+    width: 100%;
+}
+.price input{
+    width: 20%;
+    height: 30px;
+    /* margin: 3px; */
+    background-color: #141414;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 3px;
+}
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#total::before{
+    content: 'Total :';
+}
+#total{
+    background-color:#990000 ;
+    padding: 9px;
+}
+.crud input{
+    width: 100%;
+    margin: 5px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: #141414;
+    color: white;
+}
+.crud button{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: none;
+    margin: 3px;
+    background-color:darkviolet;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+    padding: 4px;
+}
+.crud button:hover{
+    background-color:darkmagenta;
+    letter-spacing: 1px;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+.search button{
+    width: 45%;
+}
+table{
+    width: 100%;
+
+    text-align: center;
+    margin:10px 0px  ;
+}
+th , td{
+    padding: 5px;
+}
+table th{
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
